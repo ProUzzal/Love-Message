@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love-Message</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        margin: auto;
+        text-align: center;
+        background-color: slategrey;
+      }
+      .message {
+        margin-top: 100px;
+        background-color: darkgoldenrod;
+        color: rgb(67, 23, 226);
+        padding: 40px;
+      }
+      h3 {
+        margin-top: 20px;
+        color: rgb(20, 240, 31);
+        font-size: 30px;
+      }
+      #buttonId {
+        background-color: black;
+        color: white;
+        font-size: 25px;
+        font-weight: bold;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      #buttonId:hover {
+        background-color: green;
+        color: red;
+      }
+      h1 {
+        font-size: 35px;
+        color: violet;
+        background-color: rgb(20, 71, 46);
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message" id="messages">
+      <h2 id="nav-bar">Hi, Mutmainnah ! Do you know who I am &#x1F60E;?</h2>
+      <h3>
+        To know who I am and What I want to say,
+      </h3>
+    </div>
+    <button id="buttonId">Click me</button>
+    <script>
+      document
+        .getElementById("buttonId")
+        .addEventListener("click", function () {
+          document.getElementById("nav-bar").style.display = "none";
+          document.getElementById("messages").innerHTML =
+            "<h1>And I want to say you, I love you &#x1F618</h1>";
+        });
+    </script>
+  </body>
+</html>
